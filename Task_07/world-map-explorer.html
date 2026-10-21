@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Map Explorer</title>
+</head>
+<body>
+  <h1>World Map Explorer</h1>
+  <p>Select a highlighted country on the map to learn more.</p>
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+    alt="World map. Click a marked region to open information about that country."
+    width="1000"
+    height="500"
+    usemap="#world-map"
+  >
+
+  <map name="world-map">
+    <area shape="circle" coords="220,185,35" href="https://en.wikipedia.org/wiki/Canada" alt="Canada in North America" target="_blank">
+    <area shape="rect" coords="185,245,250,315" href="https://en.wikipedia.org/wiki/Mexico" alt="Mexico in North America" target="_blank">
+    <area shape="poly" coords="500,180,535,170,555,195,545,225,530,245,510,230,495,205" href="https://en.wikipedia.org/wiki/India" alt="India in South Asia" target="_blank">
+    <area shape="poly" coords="485,125,525,115,550,130,545,150,515,160,490,150" href="https://en.wikipedia.org/wiki/China" alt="China in East Asia" target="_blank">
+    <area shape="circle" coords="515,300,38" href="https://en.wikipedia.org/wiki/South_Africa" alt="South Africa at the southern tip of Africa" target="_blank">
+    <area shape="default" href="https://en.wikipedia.org/wiki/Country" alt="Other countries on the world map" target="_blank">
+  </map>
+</body>
+</html>

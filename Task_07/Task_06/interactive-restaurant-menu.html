@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Restaurant Menu</title>
+</head>
+<body>
+  <h1>Interactive Restaurant Menu</h1>
+  <p>Click a dish in the image to see its details.</p>
+
+  <img
+    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=80"
+    alt="Overhead view of a colorful meal with several ingredients"
+    width="800"
+    height="600"
+    usemap="#restaurant-menu"
+  >
+
+  <map name="restaurant-menu">
+    <area shape="circle" coords="200,150,90" href="https://en.wikipedia.org/wiki/Pizza" alt="Pizza" target="_blank">
+    <area shape="circle" coords="600,150,90" href="https://en.wikipedia.org/wiki/Hamburger" alt="Burger" target="_blank">
+    <area shape="rect" coords="40,330,380,560" href="https://en.wikipedia.org/wiki/French_fries" alt="French fries" target="_blank">
+    <area shape="rect" coords="420,330,760,560" href="https://en.wikipedia.org/wiki/Salad" alt="Salad" target="_blank">
+    <area shape="poly" coords="250,20,390,20,430,100,390,220,250,220,210,100" href="https://en.wikipedia.org/wiki/Sandwich" alt="Sandwich" target="_blank">
+    <area shape="poly" coords="20,220,180,220,200,300,120,330,20,300" href="https://en.wikipedia.org/wiki/Cake" alt="Cake" target="_blank">
+    <area shape="default" href="https://en.wikipedia.org/wiki/Restaurant" alt="Other menu items" target="_blank">
+  </map>
+</body>
+</html>

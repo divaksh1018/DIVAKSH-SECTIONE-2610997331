@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readers’ Haven, Book Registration &amp; Order Form</title>
+</head>
+<body>
+  <h1>Readers’ Haven, Book Registration &amp; Order Form</h1>
+  <p>Register your details and place your book order using the form below.</p>
+
+  <form action="https://httpbin.org/post" method="post" target="_blank" enctype="multipart/form-data">
+    <input type="hidden" name="form_name" value="Readers Haven Book Order">
+
+    <p>
+      <label>Customer Information</label>
+      <p>
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer_name" placeholder="Enter your full name" required>
+      </p>
+      <p>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </p>
+      <p>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile_number" placeholder="Enter your mobile number" required>
+      </p>
+      <p>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age">
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+      </p>
+    </p>
+
+    <p>
+      <label>Book Preferences and Order</label>
+      <p>
+        <label for="category">Favorite Book Category:</label>
+        <select id="category" name="favorite_category" required>
+          <option value="" selected disabled>Select a category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Science">Science</option>
+          <option value="History">History</option>
+          <option value="Children's Books">Children’s Books</option>
+        </select>
+      </p>
+      <p>
+        <label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" name="book_title" placeholder="Enter the book title">
+      </p>
+      <p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+      </p>
+      <p>
+        <label for="delivery-date">Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery_date">
+      </p>
+      <p>
+        <label for="delivery-time">Preferred Delivery Time:</label>
+        <input type="time" id="delivery-time" name="preferred_delivery_time">
+      </p>
+    </p>
+
+    <p>
+      <label>Payment Method</label>
+      <input type="radio" id="payment-cod" name="payment_method" value="Cash on Delivery" required>
+      <label for="payment-cod">Cash on Delivery</label>
+      <input type="radio" id="payment-online" name="payment_method" value="Online Payment">
+      <label for="payment-online">Online Payment</label>
+    </p>
+
+    <p>
+      <label>Additional Services</label>
+      <input type="checkbox" id="gift-wrap" name="services" value="Gift Wrapping">
+      <label for="gift-wrap">Gift Wrapping</label>
+      <input type="checkbox" id="bookmark" name="services" value="Bookmark">
+      <label for="bookmark">Bookmark</label>
+      <input type="checkbox" id="express-delivery" name="services" value="Express Delivery">
+      <label for="express-delivery">Express Delivery</label>
+      <input type="checkbox" id="greeting-card" name="services" value="Greeting Card">
+      <label for="greeting-card">Greeting Card</label>
+    </p>
+
+    <p>
+      <label for="reference-file">Upload a reference image or document (optional):</label>
+      <input type="file" id="reference-file" name="reference_file" accept="image/*,.pdf,.doc,.docx">
+    </p>
+
+    <p>
+      <label for="delivery-address">Delivery Address and Special Instructions:</label><br>
+      <textarea id="delivery-address" name="delivery_address_and_instructions" rows="6" cols="45" placeholder="Enter your delivery address and any special instructions"></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Submit Order</button>
+      <button type="reset">Reset Form</button>
+    </p>
+  </form>
+</body>
+</html>
